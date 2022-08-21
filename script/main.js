@@ -1,13 +1,3 @@
-// change background image per 4 sec
-function changeBg(){
-	const pics = ['url("1.jpg")','url("2.jpg")','url("3.jpg")','url("4.jpg")','url("5.jpg")'];
-	const section = document.querySelector('#section');
-	const bg = pics[Math.floor(Math.random()*pics.length)];
-  section.style.backgroundImage = bg;
-	}
-	setInterval(changeBg,4000)
-
-
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
